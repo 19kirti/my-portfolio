@@ -5,30 +5,30 @@ import { motion } from 'framer-motion';
 const Education = () => {
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "Your University Name",
-      year: "2020 - 2024",
-      grade: "8.5 CGPA",
-      description: "Core subjects: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks"
+      degree: "Bachelor of Technology in Information Technology & Engineering",
+      institution: "Maharaja Agrasen Institute of Technology",
+      year: "2022 - 2026",
+      grade: "9.15 CGPA  (Dapartment Rank II)",
+      description: "Core subjects: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks."
     },
     {
       degree: "Higher Secondary (XII)",
-      institution: "Your School Name",
-      year: "2018 - 2020",
-      grade: "90%",
-      description: "Major subjects: Physics, Chemistry, Mathematics, Computer Science"
+      institution: "DAV Pushpanjali Enclave, Pushpanjali Enclave",
+      year: "2021 - 2022",
+      grade: "88.8%",
+      description: "Major subjects: Physics, Chemistry, Mathematics"
     },
     {
       degree: "Secondary School (X)",
-      institution: "Your School Name",
-      year: "2018",
-      grade: "92%",
+      institution: "DAV Pushpanjali Enclave, Pushpanjali Enclave",
+      year: "2019 - 2020",
+      grade: "97.8%",
       description: "Achieved school rank 1 in Mathematics and Science"
     }
   ];
 
   return (
-    <section id="education" className="relative rounded-4xl mt-5 w-full min-h-screen py-16 px-4">
+    <section id="education" className="relative rounded-4xl mt-5 w-full min-h-screen py-2 px-40">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -51,28 +51,28 @@ const Education = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all"
+              className="bg-[#020202] rounded-lg shadow-lg p-6 hover:shadow-xl transition-all"
             >
               <div className="grid md:grid-cols-[1fr,2fr] gap-6">
                 {/* Left Column - Timeline */}
-                <div className="space-y-2">
-                  <div className="text-blue-500 font-semibold">
-                    {edu.year}
+                <div className="text-2xl space-y-2">
+                  <div className="text-blue-400 font-semibold">
+                    {edu.degree}
                   </div>
-                  <div className="text-gray-600">
-                    {edu.grade}
+                  <div className="text-gray-400">
+                    {edu.year}
                   </div>
                 </div>
 
                 {/* Right Column - Details */}
                 <div className="space-y-3">
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    {edu.degree}
-                  </h3>
-                  <div className="text-blue-500 font-medium">
+                  <h3 className="text-2xl font-semibold text-gray-300">
                     {edu.institution}
+                  </h3>
+                  <div className="text-blue-500 text-2xl font-medium">
+                    {edu.grade}
                   </div>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-500 text-1xl">
                     {edu.description}
                   </p>
                 </div>
@@ -80,38 +80,6 @@ const Education = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Additional Certifications Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-16"
-        >
-          <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Certifications</h2>
-          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
-        </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Example Certification Card */}
-            <motion.div
-              whileHover={{ y: -5 }}
-              className="bg-white p-6 rounded-lg shadow-md"
-            >
-              <div className="text-blue-500 text-lg font-semibold mb-2">
-                Web Development Certification
-              </div>
-              <div className="text-gray-600 text-sm mb-2">
-                Issuing Organization
-              </div>
-              <div className="text-gray-500 text-xs">
-                Issued: 2023
-              </div>
-            </motion.div>
-            {/* Add more certification cards as needed */}
-          </div>
-        </motion.div>
       </motion.div>
     </section>
   );

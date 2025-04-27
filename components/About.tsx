@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen py-20 px-4 max-w-7xl mx-auto">
+    <section id="about" className="py-12 px-40 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -25,13 +25,13 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="relative"
         >
-          <div className="w-full h-[400px] relative">
+          <div className="w-[300px] h-[300px] mx-auto relative">
             <Image
-              src="/Profile.jpg" // Replace with your image path
+              src="/avatar.jpg" // Replace with your image path
               alt="Profile Image"
               fill
-              className="rounded-3xl object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-2xl object-covershadow-lg"
+              sizes="(max-width: 768px) 100vw, 300px"
             />
           </div>
         </motion.div>
@@ -43,17 +43,17 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="space-y-6"
         >
-          <h3 className="text-2xl font-semibold">
-            Hi, I'm <span className="text-blue-500">Your Name</span>
+          <h3 className="text-3xl text-blue-200 font-semibold">
+            Hi, I'm <span className="text-blue-200">Kirti Aggarwal</span>
           </h3>
           
-          <p className="text-gray-600 dark:text-gray-300">
+          <p className="text-gray-500 text-2xl dark:text-gray-300">
             I'm a passionate developer with expertise in web development. With many years
             of experience, I specialize in creating responsive and user-friendly
-            applications using modern technologies like React, Next.js, and TypeScript.
+            applications using modern technologies like MERN stack, Tailwind CSS, Next.js.
           </p>
 
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2"
@@ -86,9 +86,9 @@ const About = () => {
                      hover:bg-blue-600 transition-colors"
           >
             Download CV
-          </motion.button>
-        </motion.div>
-      </div>
+          </motion.button> */}
+        </motion.div> 
+      </div> 
     </section>
   );
 };

@@ -56,8 +56,8 @@ const ContactMe = () => {
         </svg>
       ),
       title: 'Email',
-      content: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      content: 'Email',
+      link: 'mailto:kirtiagg22@gmail.com'
     },
     {
       icon: (
@@ -67,8 +67,8 @@ const ContactMe = () => {
         </svg>
       ),
       title: 'LinkedIn',
-      content: 'linkedin.com/in/yourprofile',
-      link: 'https://linkedin.com/in/yourprofile'
+      content: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/kirti-aggarwal-b63165254'
     },
     {
       icon: (
@@ -78,13 +78,13 @@ const ContactMe = () => {
         </svg>
       ),
       title: 'GitHub',
-      content: 'github.com/yourusername',
-      link: 'https://github.com/yourusername'
+      content: 'GitHub',
+      link: 'https://github.com/19kirti'
     }
   ];
 
   return (
-    <section id="contact" className="relative rounded-4xl mt-5 w-full min-h-screen py-16 px-4">
+    <section id="contact" className="relative rounded-4xl mt-5 w-full min-h-screen py-4 px-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -108,8 +108,8 @@ const ContactMe = () => {
             className="space-y-8"
           >
             <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
-            <p className="text-gray-600 mb-8">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            <p className="text-gray-400 mb-8">
+            I'm always open to discussing new projects, creative ideas, and opportunities.
             </p>
 
             {/* Contact Methods */}
@@ -130,8 +130,8 @@ const ContactMe = () => {
                     {info.icon}
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">{info.title}</h4>
-                    <p className="text-sm">{info.content}</p>
+                    {/* <h4 className="font-medium text-gray-900">{info.title}</h4> */}
+                    <p className="text-sm text-gray-400">{info.content}</p>
                   </div>
                 </motion.a>
               ))}
@@ -220,7 +220,7 @@ const ContactMe = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 ${
+                className={`w-full px-6 py-3 bg-blue-400 text-black rounded-lg hover:bg-blue-600 transition-colors duration-300 ${
                   isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
               >

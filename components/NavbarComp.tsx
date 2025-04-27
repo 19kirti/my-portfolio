@@ -54,10 +54,10 @@ const NavbarComp = () => {
         {/* Desktop Navigation */}
         <NavBody className="px-5">
           <NavbarLogo />
-          <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
+          <NavItems className="flex items-center gap-6" items={navItems} />
+          {/* <div className="flex items-center gap-4">
             <NavbarButton variant="primary">Theme</NavbarButton>
-          </div>
+          </div> */}
         </NavBody>
  
         {/* Mobile Navigation */}
@@ -84,7 +84,7 @@ const NavbarComp = () => {
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
+            {/* <div className="flex w-full flex-col gap-4">
               
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -93,7 +93,7 @@ const NavbarComp = () => {
               >
                 Theme
               </NavbarButton>
-            </div>
+            </div> */}
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
