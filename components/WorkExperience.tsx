@@ -7,6 +7,7 @@ const WorkExperience = () => {
     {
       role: "Infosys Web Development Certification",
       company: "Infosys",
+      certificateLink: "https://drive.google.com/file/d/1-Qm8YXke-RuXBk-bjD3bJ8cqMEgHWUe0/view?usp=drive_link",
       duration: "March 2025 - April 2025",
       location: "India",
       description: [
@@ -18,6 +19,7 @@ const WorkExperience = () => {
     {
       role: "IBM Data Analytics Training Program",
       company: "IBM SkillsBuild",
+      certificateLink: "https://drive.google.com/file/d/1864Cn2N3mhohdCWvZtrg_qZpfSbhcngZ/view?usp=drive_link",
       duration: "December 2024 - January 2025",
       location: "India",
       description: [
@@ -69,14 +71,29 @@ const WorkExperience = () => {
             >
               <div className="grid md:grid-cols-[1fr,2fr] gap-6">
                 {/* Left Column - Timeline */}
-                <div className="space-y-2">
+                < div className="space-y-2">
                   <div className="text-blue-400 text-2xl font-semibold">
                     {exp.role}
                   </div>
                   <div className="text-gray-400 text-xl">
                     {exp.duration}
                   </div>
+                  {/* Certificate Button */}
+                  {exp.certificateLink && (
+                    <motion.a
+                      href={exp.certificateLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 bg-[#121111] text-blue-200 border border-[#63b3ed] rounded-md hover:bg-[#63b3ed] hover:text-[#1f1f1f] transition-all duration-300 text-sm mt-2"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      View Certificate
+                    </motion.a>
+                  )}
                 </div>
+
+                
 
                 {/* Right Column - Details */}
                 <div className="space-y-3">
