@@ -78,7 +78,7 @@ const Skills = () => {
                                   rounded-lg border border-blue-500/20 hover:border-blue-500/40 
                                   transition-all duration-300 cursor-pointer"
                     >
-                      <span className="text-gray-400 dark:text-gray-300 text-s">
+                      <span className="text-gray-300 dark:text-gray-300 text-s">
                         {skill}
                       </span>
                       <div className="absolute -bottom-1 left-0 w-full h-[2px] 

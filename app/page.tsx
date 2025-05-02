@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import ContactMe from "@/components/ContactMe";
 import Education from "@/components/Education";
+import Footer from "@/components/Footer";
 import HackathonsAndContests from "@/components/Hackathons";
 import Hero from "@/components/Hero";
 import NavbarComp from "@/components/NavbarComp";
@@ -21,7 +22,9 @@ export default function Home() {
         <Projects/>
         <HackathonsAndContests/>
         <ContactMe/>
+        
         <Hero/>
+        <Footer/>
       </div>
     </main>
   );

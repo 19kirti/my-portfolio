@@ -108,7 +108,7 @@ const ContactMe = () => {
             className="space-y-8"
           >
             <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-300 mb-8">
             I'm always open to discussing new projects, creative ideas, and opportunities.
             </p>
 
@@ -131,7 +131,7 @@ const ContactMe = () => {
                   </div>
                   <div>
                     {/* <h4 className="font-medium text-gray-900">{info.title}</h4> */}
-                    <p className="text-sm text-gray-400">{info.content}</p>
+                    <p className="text-sm text-gray-200">{info.content}</p>
                   </div>
                 </motion.a>
               ))}

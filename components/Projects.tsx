@@ -5,37 +5,44 @@ import Image from 'next/image';
 
 const projectsData = [
   {
-    title: "BookHive : A Books Finder App",
-    description: "A web application built with React.js, in order to assist you with finding books of your interest and many more exciting features.",
-    image: "/project1.jpg",
-    technologies: ["React", "Bootstrap", "Google Books API"],
-    githubLink: "https://github.com/19kirti/BookHive-my-books-finder-app",
-  },
-  {
-    title: "MediEase : A Hospital Management System",
-    description: "An system equivalent to hospital, with features such as booking doctors appointments, finding nearby doctors & clinics and many more.",
-    image: "/project2.jpg",
-    technologies: ["React", "Node.js", "Express.js", "MongoDb", "Tailwind"],
-    githubLink: "https://github.com/19kirti/MediEase---Hospital-Management-System",
-  },
-  {
     title: "DiagnoTech : A Multiple Diseases Detection System",
     description: "An AI based solution for the detection of many diseases sucha as Diabetes, Hepatitis, Breast Cancer and many more.",
-    image: "/project2.jpg",
+    image: "/diagnotech.png",
     technologies: ["Python", "Streamlit", "Logistic Regression", "Random Forest Classifier", "Scikit-Learn", "Pandas"],
     githubLink: "https://github.com/19kirti/DiagnoTech",
   },
   {
-    title: "News.next : A real time news web application",
+    title: "MediEase : A Hospital Management System",
+    description: "An system equivalent to hospital, with features such as booking doctors appointments, finding nearby doctors & clinics and many more.",
+    image: "/mediease.png",
+    technologies: ["React", "Tailwind" ,"Node.js", "Express.js", "MongoDb"],
+    githubLink: "https://github.com/19kirti/MediEase---Hospital-Management-System",
+  },
+  {
+    title: "BharatRanch : For the Farmers good !",
+    description: "A platform connecting farmers and buyers for bulk transactions with minimal margins. It enables direct sales between farmers and dealers while providing seamless communication tools for negotiations and transactions.",
+    image: "/bharatranch.png",
+    technologies: ["React", "Bootstrap", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
+    githubLink: "https://github.com/19kirti/bharat-ranch",
+  },
+  {
+    title: "BookHive : A Books Finder Web Application",
+    description: "A web application built with React.js, in order to assist you with finding books of your interest and many more exciting features.",
+    image: "/bookhive.png",
+    technologies: ["React", "Bootstrap", "Google Books API"],
+    githubLink: "https://github.com/19kirti/BookHive-my-books-finder-app",
+  },
+  {
+    title: "News.next : A real time News Web Application",
     description: "A web application that shows news under various categories such as sports, entertainment, economics, history and many others.",
-    image: "/project2.jpg",
+    image: "/news.png",
     technologies: ["Javascript", "React", "Bootstrap", "News API"],
     githubLink: "https://github.com/19kirti/news-next-app",
   },
   {
-    title: "An E-Mail Validator",
+    title: "E-Validate : An E-Mail Validator",
     description: "A web application that will help you to validate your E-Mail by checking if it is a valid Id or a spam.",
-    image: "/project1.jpg",
+    image: "/e-validate.png",
     technologies: ["HTML", "CSS", "Javascript" , "E-Mail API"],
     githubLink: "https://github.com/19kirti/E-Mail_Validator",
   },
@@ -74,17 +81,17 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-contain p-1"
                 />
               </div>
 
               {/* Project Content */}
               <div className="p-6 space-y-4">
-                <h3 className="text-xl font-semibold text-gray-200">
+                <h3 className="text-xl font-semibold text-blue-100">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-400">
+                <p className="text-gray-200">
                   {project.description}
                 </p>
 

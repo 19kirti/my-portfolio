@@ -20,6 +20,10 @@ const hackathonData: Hackathon[] = [
     name: "GDG Study Jam 2023 and 2024 Finalist",
     description: "Completed various cloud learning series, including Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud."
   },
+  {
+    name: "Smart India Hackathon 2023 Runner up",
+    description: "Built BharataRanch, a cutting-edge platform connecting farmers and buyers for bulk transactions with minimal margins."
+  },
   // Add more hackathons as needed
 ];
 

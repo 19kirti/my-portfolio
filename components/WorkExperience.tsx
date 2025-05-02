@@ -5,18 +5,6 @@ import { motion } from 'framer-motion';
 const WorkExperience = () => {
   const experienceData = [
     {
-      role: "IBM Data Analytics Training Program",
-      company: "IBM SkillsBuild",
-      duration: "December 2024 - January 2025",
-      location: "India",
-      description: [
-        "Increased proficiency by about 20%, in data analysis, SQL, and Python for handling large datasets.",
-        "Learned data visualization techniques using Matplotlib and Seaborn.",
-        "Built ML models for multiple diseases prediction and heart failure prediction systems, enhancing the predictive accuracy to about 80%."
-      ]
-    },
-
-    {
       role: "Infosys Web Development Certification",
       company: "Infosys",
       duration: "March 2025 - April 2025",
@@ -25,6 +13,17 @@ const WorkExperience = () => {
         "Developed strong foundational knowledge in HTML, CSS, JavaScript, and responsive web design.",
         "Built multiple interactive web projects following modern development standards.",
         "Earned a top 10% score among all participants in the final Web Development Capstone project."
+      ]
+    },
+    {
+      role: "IBM Data Analytics Training Program",
+      company: "IBM SkillsBuild",
+      duration: "December 2024 - January 2025",
+      location: "India",
+      description: [
+        "Increased proficiency by about 20%, in data analysis, SQL, and Python for handling large datasets.",
+        "Learned data visualization techniques using Matplotlib and Seaborn.",
+        "Built ML models for multiple diseases prediction and heart failure prediction systems, enhancing the predictive accuracy to about 80%."
       ]
     },
 

@@ -16,14 +16,14 @@ const Education = () => {
       institution: "DAV Pushpanjali Enclave, Pushpanjali Enclave",
       year: "2021 - 2022",
       grade: "88.8%",
-      description: "Major subjects: Physics, Chemistry, Mathematics"
+      description: "Major subjects: Physics, Chemistry, Mathematics, Information Technology."
     },
     {
       degree: "Secondary School (X)",
       institution: "DAV Pushpanjali Enclave, Pushpanjali Enclave",
       year: "2019 - 2020",
       grade: "97.8%",
-      description: "Achieved school rank 1 in Mathematics and Science"
+      description: "Achieved school rank 1 in Mathematics, Science and Information Technology."
     }
   ];
 
@@ -72,7 +72,7 @@ const Education = () => {
                   <div className="text-blue-500 text-2xl font-medium">
                     {edu.grade}
                   </div>
-                  <p className="text-gray-500 text-1xl">
+                  <p className="text-gray-300 text-1xl">
                     {edu.description}
                   </p>
                 </div>
