@@ -38,6 +38,7 @@ const ContactMe = () => {
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
+      console.error("Form submission error:", error);
       setSubmitStatus({
         type: 'error',
         message: 'Oops! Something went wrong. Please try again.'
@@ -107,9 +108,9 @@ const ContactMe = () => {
             transition={{ duration: 0.5 }}
             className="space-y-8"
           >
-            <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
+            <h3 className="text-2xl font-semibold mb-6">Let`&apos;`s Connect</h3>
             <p className="text-gray-300 mb-8">
-            I'm always open to discussing new projects, creative ideas, and opportunities.
+            I`&apos;`m always open to discussing new projects, creative ideas, and opportunities.
             </p>
 
             {/* Contact Methods */}

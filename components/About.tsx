@@ -44,11 +44,11 @@ const About = () => {
           className="space-y-6"
         >
           <h3 className="text-3xl text-blue-200 font-semibold">
-            Hi, I'm <span className="text-blue-200">Kirti Aggarwal</span>
+            Hi, I`&apos;`m <span className="text-blue-200">Kirti Aggarwal</span>
           </h3>
           
           <p className="text-gray-300 text-2xl dark:text-gray-300">
-            I'm a passionate developer with expertise in web development. With many years
+            I`&apos;`m a passionate developer with expertise in web development. With many years
             of experience, I specialize in creating responsive and user-friendly
             applications using modern technologies like MERN stack, Tailwind CSS, Next.js.
           </p>
