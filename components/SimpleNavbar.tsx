@@ -67,7 +67,7 @@ const SimpleNavbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center md:justify-center md:relative">
           {/* Logo - Left on mobile, absolute left on desktop */}
-          <div className="text-xl font-bold md:absolute md:left-0">
+          <div className="text-2xl text-black font-bold md:absolute md:left-0">
             <Link href="/">Portfolio</Link>
           </div>
 
