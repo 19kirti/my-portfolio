@@ -47,15 +47,18 @@ const SimpleNavbar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // Only add the event listener client-side
+    if (typeof window !== 'undefined') {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${
         scrolled
           ? "bg-white/90 backdrop-blur-sm shadow-md py-2"
           : "bg-white py-4 mt-5"

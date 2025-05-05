@@ -16,16 +16,18 @@ export default function Home() {
     <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-10">
       <div className="max-w-7xl w-full">
         <SimpleNavbar/>
-        <About/>
-        <WorkExperience/>
-        <Skills/>
-        <Education/>
-        <Projects/>
-        <HackathonsAndContests/>
-        <ContactMe/>
-        
-        <Hero/>
-        <Footer/>
+        {/* Add padding to the top to prevent content from being hidden under the navbar */}
+        <div className="pt-24">
+          <About/>
+          <WorkExperience/>
+          <Skills/>
+          <Education/>
+          <Projects/>
+          <HackathonsAndContests/>
+          <ContactMe/>
+          <Hero/>
+          <Footer/>
+        </div>
       </div>
     </main>
   );
