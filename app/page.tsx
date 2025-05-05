@@ -4,7 +4,6 @@ import Education from "@/components/Education";
 import Footer from "@/components/Footer";
 import HackathonsAndContests from "@/components/Hackathons";
 import Hero from "@/components/Hero";
-import NavbarComp from "@/components/NavbarComp";
 import Projects from "@/components/Projects";
 import SimpleNavbar from "@/components/SimpleNavbar";
 import Skills from "@/components/Skills";
