@@ -44,7 +44,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <section id="workexperience" className="relative w-full py-8 px-40">
+    <section id="workexperience" className="relative w-full py-8 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -53,13 +53,13 @@ const WorkExperience = () => {
         className="max-w-7xl mx-auto"
       >
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
-          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Work Experience</h2>
+          <div className="w-16 md:w-24 h-1 bg-blue-500 mx-auto"></div>
         </div>
 
         {/* Experience Timeline */}
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {experienceData.map((exp, index) => (
             <motion.div
               key={index}
@@ -67,15 +67,15 @@ const WorkExperience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-[#020202] rounded-lg shadow-lg p-6 hover:shadow-xl transition-all"
+              className="bg-[#020202] rounded-lg shadow-lg p-4 sm:p-6 hover:shadow-xl transition-all"
             >
-              <div className="grid md:grid-cols-[1fr,2fr] gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-[1fr,2fr] gap-4 md:gap-6">
                 {/* Left Column - Timeline */}
-                < div className="space-y-2">
-                  <div className="text-blue-400 text-2xl font-semibold">
+                <div className="space-y-2 mb-4 md:mb-0">
+                  <div className="text-blue-400 text-xl md:text-2xl font-semibold">
                     {exp.role}
                   </div>
-                  <div className="text-gray-400 text-xl">
+                  <div className="text-gray-400 text-lg md:text-xl">
                     {exp.duration}
                   </div>
                   {/* Certificate Button */}
@@ -84,7 +84,7 @@ const WorkExperience = () => {
                       href={exp.certificateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-4 py-2 bg-[#121111] text-blue-200 border border-[#63b3ed] rounded-md hover:bg-[#63b3ed] hover:text-[#1f1f1f] transition-all duration-300 text-sm mt-2"
+                      className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-[#121111] text-blue-200 border border-[#63b3ed] rounded-md hover:bg-[#63b3ed] hover:text-[#1f1f1f] transition-all duration-300 text-xs sm:text-sm mt-2"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >
@@ -93,17 +93,9 @@ const WorkExperience = () => {
                   )}
                 </div>
 
-                
-
                 {/* Right Column - Details */}
-                <div className="space-y-3">
-                  {/* <h3 className="text-2xl font-semibold text-gray-200">
-                    {exp.location}
-                  </h3>
-                  <div className="text-blue-300 font-medium">
-                    {exp.company}
-                  </div> */}
-                  <ul className="text-gray-200 text-sm space-y-2">
+                <div className="space-y-2 md:space-y-3">
+                  <ul className="text-gray-200 text-xs sm:text-sm space-y-1.5 sm:space-y-2">
                     {exp.description.map((point, idx) => (
                       <motion.li
                         key={idx}
@@ -113,8 +105,8 @@ const WorkExperience = () => {
                         transition={{ duration: 0.3, delay: index * 0.1 + idx * 0.1 }}
                         className="flex items-start"
                       >
-                        <span className="text-blue-500 mr-2">•</span>
-                        {point}
+                        <span className="text-blue-500 mr-2 flex-shrink-0">•</span>
+                        <span>{point}</span>
                       </motion.li>
                     ))}
                   </ul>
@@ -130,13 +122,13 @@ const WorkExperience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-16"
+          className="mt-12 md:mt-16"
         >
-          <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Skills</h2>
-          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
-        </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Skills</h2>
+            <div className="w-16 md:w-24 h-1 bg-blue-500 mx-auto"></div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
             {[
               "React.js", "Next.js", "TypeScript", "Node.js",
               "MongoDB", "AWS", "Git", "REST APIs"
@@ -144,9 +136,9 @@ const WorkExperience = () => {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="bg-blue-100 p-4 rounded-lg shadow-md text-center"
+                className="bg-blue-100 p-3 md:p-4 rounded-lg shadow-md text-center"
               >
-                <span className="text-blue-500 font-medium">{skill}</span>
+                <span className="text-blue-500 font-medium text-sm md:text-base">{skill}</span>
               </motion.div>
             ))}
           </div>
