@@ -58,26 +58,26 @@ const SimpleNavbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 w-11/12 max-w-7xl mx-auto z-[100] transition-all duration-300 rounded-full ${
         scrolled
-          ? "bg-white/90 backdrop-blur-sm shadow-md py-2"
-          : "bg-white py-4 mt-5"
+          ? "bg-white/90 backdrop-blur-sm shadow-md py-2 mt-2"
+          : "bg-white py-3 mt-5"
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div className="text-xl font-bold">
+      <div className="container mx-auto px-6">
+        <div className="flex justify-between items-center md:justify-center md:relative">
+          {/* Logo - Left on mobile, absolute left on desktop */}
+          <div className="text-xl font-bold md:absolute md:left-0">
             <Link href="/">Portfolio</Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center justify-center space-x-6">
             {navItems.map((item, idx) => (
               <a
                 key={`desktop-link-${idx}`}
                 href={item.link}
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base"
               >
                 {item.name}
               </a>
@@ -118,13 +118,13 @@ const SimpleNavbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 bg-white">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden mt-4 pb-4 bg-white rounded-2xl shadow-lg absolute left-0 right-0 px-4">
+            <div className="flex flex-col space-y-3">
               {navItems.map((item, idx) => (
                 <a
                   key={`mobile-link-${idx}`}
                   href={item.link}
-                  className="text-gray-700 hover:text-blue-600 transition-colors px-2 py-1"
+                  className="text-gray-700 hover:text-blue-600 transition-colors px-2 py-1 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
