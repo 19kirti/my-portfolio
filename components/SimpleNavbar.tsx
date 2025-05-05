@@ -77,7 +77,7 @@ const SimpleNavbar = () => {
               <a
                 key={`desktop-link-${idx}`}
                 href={item.link}
-                className="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base"
+                className="text-gray-700 hover:text-blue-500 transition-colors text-sm lg:text-base"
               >
                 {item.name}
               </a>
@@ -124,7 +124,7 @@ const SimpleNavbar = () => {
                 <a
                   key={`mobile-link-${idx}`}
                   href={item.link}
-                  className="text-black hover:text-blue-600 transition-colors px-2 py-1 text-center"
+                  className="text-black hover:text-blue-500 transition-colors px-2 py-1 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
