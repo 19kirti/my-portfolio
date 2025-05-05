@@ -60,7 +60,7 @@ const SimpleNavbar = () => {
     <nav
       className={`fixed top-5 left-0 right-0 w-11/12 max-w-7xl mx-auto z-[100] transition-all duration-300 rounded-full ${
         scrolled
-          ? "bg-blue-3oo/90 backdrop-blur-sm shadow-md py-2 mt-2"
+          ? "bg-blue-3oo/40 backdrop-blur-sm shadow-md py-2 mt-2"
           : "bg-blue-300 py-3 mt-5"
       }`}
     >
@@ -77,7 +77,7 @@ const SimpleNavbar = () => {
               <a
                 key={`desktop-link-${idx}`}
                 href={item.link}
-                className="text-gray-700 hover:text-blue-500 transition-colors text-sm lg:text-base"
+                className="text-gray-700 hover:text-blue-200 transition-colors text-sm lg:text-base"
               >
                 {item.name}
               </a>
@@ -124,7 +124,7 @@ const SimpleNavbar = () => {
                 <a
                   key={`mobile-link-${idx}`}
                   href={item.link}
-                  className="text-black hover:text-blue-500 transition-colors px-2 py-1 text-center"
+                  className="text-black hover:text-blue-200 transition-colors px-2 py-1 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
