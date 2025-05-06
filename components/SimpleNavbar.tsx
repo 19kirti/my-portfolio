@@ -58,10 +58,10 @@ const SimpleNavbar = () => {
 
   return (
     <nav
-      className={`fixed top-5 left-0 right-0 w-11/12 max-w-7xl mx-auto z-[100] transition-all duration-300 rounded-full ${
+      className={`fixed z-[100] transition-all duration-300 rounded-full ${
         scrolled
-          ? "bg-blue-3oo/40 backdrop-blur-sm shadow-md py-2 mt-2"
-          : "bg-blue-300 py-3 mt-5"
+          ? "top-3 left-0 right-0 w-11/12 max-w-7xl mx-auto bg-blue-400 backdrop-blur-sm shadow-md py-2"
+          : "top-5 left-0 right-0 w-11/12 max-w-7xl mx-auto bg-blue-300 py-3"
       }`}
     >
       <div className="container mx-auto px-6">
@@ -77,7 +77,11 @@ const SimpleNavbar = () => {
               <a
                 key={`desktop-link-${idx}`}
                 href={item.link}
-                className="text-gray-700 hover:text-blue-200 transition-colors text-sm lg:text-base"
+                className={`transition-colors text-sm lg:text-base ${
+                  scrolled 
+                    ? "text-black hover:text-white" 
+                    : "text-gray-700 hover:text-white"
+                }`}
               >
                 {item.name}
               </a>
@@ -86,7 +90,7 @@ const SimpleNavbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden focus:outline-none"
+            className="md:hidden focus:outline-none text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -118,13 +122,15 @@ const SimpleNavbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 bg-blue-300 rounded-2xl shadow-lg absolute left-0 right-0 px-4">
+          <div className={`md:hidden mt-4 pb-4 rounded-2xl shadow-lg absolute left-0 right-0 px-4 ${
+            scrolled ? "bg-blue-400" : "bg-blue-300"
+          }`}>
             <div className="flex flex-col space-y-3">
               {navItems.map((item, idx) => (
                 <a
                   key={`mobile-link-${idx}`}
                   href={item.link}
-                  className="text-black hover:text-blue-200 transition-colors px-2 py-1 text-center"
+                  className="text-black hover:text-white transition-colors px-2 py-1 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
