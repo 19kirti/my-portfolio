@@ -4,19 +4,20 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const projectsData = [
+
+  {
+    title: "Brevity : Your Smart Resume Companion",
+    description: "An AI based An intelligent tool that helps job seekers generate customized resume summaries and cover letters by analyzing job descriptions and resumes using the Gemini API. Supports both text input and file uploads, making it easier to tailor applications for specific roles.",
+    image: "/Brevity WebApp.png",
+    technologies: ["Next.js", "Tailwind", "Google Gemini AI"],
+    githubLink: "https://github.com/19kirti/Brevity---Your-Smart-Resume-Companion",
+  },
   {
     title: "DiagnoTech : A Multiple Diseases Detection System",
     description: "An AI based solution for the detection of many diseases sucha as Diabetes, Hepatitis, Breast Cancer and many more.",
     image: "/diagnotech.png",
     technologies: ["Python", "Streamlit", "Logistic Regression", "Random Forest Classifier", "Scikit-Learn", "Pandas"],
     githubLink: "https://github.com/19kirti/DiagnoTech",
-  },
-  {
-    title: "MediEase : A Hospital Management System",
-    description: "An system equivalent to hospital, with features such as booking doctors appointments, finding nearby doctors & clinics and many more.",
-    image: "/mediease.png",
-    technologies: ["React", "Tailwind" ,"Node.js", "Express.js", "MongoDb"],
-    githubLink: "https://github.com/19kirti/MediEase---Hospital-Management-System",
   },
   {
     title: "BharatRanch : For the Farmers good !",
@@ -38,6 +39,13 @@ const projectsData = [
     image: "/news.png",
     technologies: ["Javascript", "React", "Bootstrap", "News API"],
     githubLink: "https://github.com/19kirti/news-next-app",
+  },
+  {
+    title: "MediEase : A Hospital Management System",
+    description: "An system equivalent to hospital, with features such as booking doctors appointments, finding nearby doctors & clinics and many more.",
+    image: "/mediease.png",
+    technologies: ["React", "Tailwind" ,"Node.js", "Express.js", "MongoDb"],
+    githubLink: "https://github.com/19kirti/MediEase---Hospital-Management-System",
   },
   {
     title: "E-Validate : An E-Mail Validator",
