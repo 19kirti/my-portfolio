@@ -48,7 +48,7 @@ const About = () => {
           </h3>
           
           <p className="text-gray-300 text-lg md:text-2xl dark:text-gray-300">
-            I&apos;m a goal-driven individual with a strong interest in data science, analytics, and AI. I enjoy solving real-world problems using data and thrive in roles that challenge me to think critically. While data is my core strength, I also have development skills that support building practical, end-to-end solutions. I'm curious, adaptable, and always eager to learn and grow.
+            I&apos;m a goal-driven individual with a strong interest in data science, analytics, and AI. I enjoy solving real-world problems using data and thrive in roles that challenge me to think critically. While data is my core strength, I also have development skills that support building practical, end-to-end solutions. I&apos;m curious, adaptable, and always eager to learn and grow.
           </p>
 
           {/* <div className="space-y-4">
