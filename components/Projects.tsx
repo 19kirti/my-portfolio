@@ -41,13 +41,6 @@ const projectsData = [
     githubLink: "https://github.com/19kirti/news-next-app",
   },
   {
-    title: "MediEase : A Hospital Management System",
-    description: "An system equivalent to hospital, with features such as booking doctors appointments, finding nearby doctors & clinics and many more.",
-    image: "/mediease.png",
-    technologies: ["React", "Tailwind" ,"Node.js", "Express.js", "MongoDb"],
-    githubLink: "https://github.com/19kirti/MediEase---Hospital-Management-System",
-  },
-  {
     title: "E-Validate : An E-Mail Validator",
     description: "A web application that will help you to validate your E-Mail by checking if it is a valid Id or a spam.",
     image: "/e-validate.png",
