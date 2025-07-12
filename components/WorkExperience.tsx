@@ -4,18 +4,7 @@ import { motion } from 'framer-motion';
 
 const WorkExperience = () => {
   const experienceData = [
-    {
-      role: "Infosys Web Development Certification",
-      company: "Infosys",
-      certificateLink: "https://drive.google.com/file/d/1-Qm8YXke-RuXBk-bjD3bJ8cqMEgHWUe0/view?usp=drive_link",
-      duration: "March 2025 - April 2025",
-      location: "India",
-      description: [
-        "Developed strong foundational knowledge in HTML, CSS, JavaScript, and responsive web design.",
-        "Built multiple interactive web projects following modern development standards.",
-        "Earned a top 10% score among all participants in the final Web Development Capstone project."
-      ]
-    },
+    
     {
       role: "IBM Data Analytics Training Program",
       company: "IBM SkillsBuild",
@@ -29,18 +18,19 @@ const WorkExperience = () => {
       ]
     },
 
-    // {
-    //   role: "Software Development Intern",
-    //   company: "Company Name",
-    //   duration: "Jan 2023 - May 2023",
-    //   location: "City, Country",
-    //   description: [
-    //     "Built and deployed RESTful APIs using Node.js and Express",
-    //     "Worked on front-end development using React and TypeScript",
-    //     "Participated in code reviews and implemented feedback",
-    //     "Reduced application load time by 30% through optimization"
-    //   ]
-    // }
+    {
+      role: "Infosys Web Development Certification",
+      company: "Infosys",
+      certificateLink: "https://drive.google.com/file/d/1-Qm8YXke-RuXBk-bjD3bJ8cqMEgHWUe0/view?usp=drive_link",
+      duration: "March 2025 - April 2025",
+      location: "India",
+      description: [
+        "Developed strong foundational knowledge in HTML, CSS, JavaScript, and responsive web design.",
+        "Built multiple interactive web projects following modern development standards.",
+        "Earned a top 10% score among all participants in the final Web Development Capstone project."
+      ]
+    },
+
   ];
 
   return (

@@ -5,31 +5,30 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   const skillsData = {
     "Programming Languages": [
-      "Java", "Python", "Javascript"
+      "Java", "Python"
     ],
-    "Frontend": [
-     "HTML5", "JavaScript", "Typescript", "React.js", "Next.js",
-      "Tailwind CSS", "Bootstrap",
-    ],
-    "Backend": [
-      "Node.js", "Express.js", "EJS",
-      "RESTful APIs"
+    "Data Science":[
+       "Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Preprocessing", "Feature Engineering", "Model Evaluation", "EDA"
     ],
     "Databases":[
         "MySQL", "MongoDB"
     ],
-    "AI/ML":[
-        "Python", "Streamlit", "Scikit-learn", "Pandas", "Numpy"
+    "Machine Learning":[
+      "Scikit-Learn", "Supervised/Unsupervised Learning", "Prompt Engineering" 
+    ],
+    "Web-Technologies": [
+     "HTML5", "JavaScript", "Typescript", "React.js", "Next.js",
+      "Tailwind CSS", "Bootstrap", "Node.js", "Express.js", "EJS",
+      "RESTful APIs"
     ],
     "Tools & Tech": [
-      "Git", "GitHub", "VS Code",
-       "IntelliJ Idea", "Postman", "Vercel"
+      "VS Code", "IntelliJ Idea", "Jupyter Notebook", "Microsoft Excel", "Power BI", "Tableau", "Git", "GitHub"
     ],
     "Graphic Designing":[
      "Figma", "Canva" , "Adobe Photoshop"
     ],
     "Other": [
-      "DSA", "Problem Solving", "Public Speaking", "Teamwork & Collaboration", "Agile"
+    "Problem Solving", "Analytical Thinking", "Teamwork & Collaboration", "Public Speaking", "People Management", "Agile", "Scrum"
     ],
   };
 

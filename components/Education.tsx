@@ -8,7 +8,7 @@ const Education = () => {
       degree: "Bachelor of Technology in Information Technology & Engineering",
       institution: "Maharaja Agrasen Institute of Technology",
       year: "2022 - 2026",
-      grade: "9.15 CGPA  (Dapartment Rank II)",
+      grade: "9.24 CGPA  (Dapartment Rank II)",
       description: "Core subjects: Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks."
     },
     {
