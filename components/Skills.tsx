@@ -7,19 +7,19 @@ const Skills = () => {
     "Programming Languages": [
       "Java", "Python"
     ],
-    "Data Science":[
-       "Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Preprocessing", "Feature Engineering", "Model Evaluation", "EDA"
-    ],
-    "Databases":[
-        "MySQL", "MongoDB"
-    ],
-    "Machine Learning":[
-      "Scikit-Learn", "Supervised/Unsupervised Learning", "Prompt Engineering" 
-    ],
     "Web-Technologies": [
      "HTML5", "JavaScript", "Typescript", "React.js", "Next.js",
       "Tailwind CSS", "Bootstrap", "Node.js", "Express.js", "EJS",
       "RESTful APIs"
+    ],
+    "Databases":[
+        "MySQL", "MongoDB"
+    ],
+    "Data Science":[
+       "Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Preprocessing", "Feature Engineering", "Model Evaluation", "EDA"
+    ],
+    "Machine Learning":[
+      "Scikit-Learn", "Supervised/Unsupervised Learning", "Prompt Engineering" 
     ],
     "Tools & Tech": [
       "VS Code", "IntelliJ Idea", "Jupyter Notebook", "Microsoft Excel", "Power BI", "Tableau", "Git", "GitHub"

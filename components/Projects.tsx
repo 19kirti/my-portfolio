@@ -13,18 +13,25 @@ const projectsData = [
     githubLink: "https://github.com/19kirti/Brevity---Your-Smart-Resume-Companion",
   },
   {
-    title: "DiagnoTech : A Multiple Diseases Detection System",
-    description: "An AI based solution for the detection of many diseases sucha as Diabetes, Hepatitis, Breast Cancer and many more.",
-    image: "/diagnotech.png",
-    technologies: ["Python", "Streamlit", "Logistic Regression", "Random Forest Classifier", "Scikit-Learn", "Pandas"],
-    githubLink: "https://github.com/19kirti/DiagnoTech",
-  },
-  {
     title: "BharatRanch : For the Farmers good !",
     description: "A platform connecting farmers and buyers for bulk transactions with minimal margins. It enables direct sales between farmers and dealers while providing seamless communication tools for negotiations and transactions.",
     image: "/bharatranch.png",
     technologies: ["React", "Bootstrap", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
     githubLink: "https://github.com/19kirti/bharat-ranch",
+  },
+  {
+    title: "Insurance Data Analytics DashBoard",
+    description: "Power BI dashboard provides insights into key insurance metrics such as premium distribution, claim statuses, and customer demographics — to uncover insights that can support better risk assessment and policy decisions",
+    image: "/ReportSS.png",
+    technologies: ["PowerBI", "Excel", "KPI Tracking"],
+    githubLink: "https://github.com/19kirti/InsuranceDataAnalysis",
+  },
+  {
+    title: "DiagnoTech : A Multiple Diseases Detection System",
+    description: "An AI based solution for the detection of many diseases sucha as Diabetes, Hepatitis, Breast Cancer and many more.",
+    image: "/diagnotech.png",
+    technologies: ["Python", "Streamlit", "Logistic Regression", "Random Forest Classifier", "Scikit-Learn", "Pandas"],
+    githubLink: "https://github.com/19kirti/DiagnoTech",
   },
   {
     title: "BookHive : A Books Finder Web Application",

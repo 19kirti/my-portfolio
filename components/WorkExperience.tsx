@@ -4,20 +4,27 @@ import { motion } from 'framer-motion';
 
 const WorkExperience = () => {
   const experienceData = [
-    
     {
-      role: "IBM Data Analytics Training Program",
-      company: "IBM SkillsBuild",
-      certificateLink: "https://drive.google.com/file/d/1864Cn2N3mhohdCWvZtrg_qZpfSbhcngZ/view?usp=drive_link",
-      duration: "December 2024 - January 2025",
+      role: "Data Analysis Job Simulation",
+      company: "Deloitte",
+      certificateLink: "https://drive.google.com/file/d/1VvROj5XuZgWHiQQZWxoWcIcF6ZR3KmEQ/view?usp=drive_link",
+      duration: "June 2025 - July 2025",
       location: "India",
       description: [
-        "Increased proficiency by about 20%, in data analysis, SQL, and Python for handling large datasets.",
-        "Learned data visualization techniques using Matplotlib and Seaborn.",
-        "Built ML models for multiple diseases prediction and heart failure prediction systems, enhancing the predictive accuracy to about 80%."
+        "Developed and presented a comprehensive dashboard and executive summary, strengthening proficiency in data interpretation, critical thinking, and delivering actionable business intelligence."
       ]
     },
-
+    {
+      role: "Content and Graphics Lead",
+      company: "National Service Scheme (NSS)",
+      certificateLink: "https://drive.google.com/file/d/1E_T49gSyLQrc7_48K_7yICmAd11v5oFX/view?usp=drive_link",
+      duration: "January 2023 - January 2025",
+      location: "India",
+      description: [
+        "Led content strategy and drove digital outreach strategies for 10+ social campaigns & events that boosted event participation and community interaction, increasing the online engagement by 100%.",
+        "Directed graphics team to produce 60+ high-impact visuals and videos, strengthening brand presence and audience connection."
+      ]
+    },
     {
       role: "Infosys Web Development Certification",
       company: "Infosys",
@@ -28,6 +35,18 @@ const WorkExperience = () => {
         "Developed strong foundational knowledge in HTML, CSS, JavaScript, and responsive web design.",
         "Built multiple interactive web projects following modern development standards.",
         "Earned a top 10% score among all participants in the final Web Development Capstone project."
+      ]
+    },
+    {
+      role: "IBM Data Analytics Training Program",
+      company: "IBM SkillsBuild",
+      certificateLink: "https://drive.google.com/file/d/1864Cn2N3mhohdCWvZtrg_qZpfSbhcngZ/view?usp=drive_link",
+      duration: "December 2024 - January 2025",
+      location: "India",
+      description: [
+        "Increased proficiency by about 20%, in data analysis, SQL, and Python for handling large datasets.",
+        "Learned data visualization techniques using Matplotlib and Seaborn.",
+        "Built ML models for multiple diseases prediction and heart failure prediction systems, enhancing the predictive accuracy to about 80%."
       ]
     },
 

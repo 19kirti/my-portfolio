@@ -48,7 +48,9 @@ const About = () => {
           </h3>
           
           <p className="text-gray-300 text-lg md:text-2xl dark:text-gray-300">
-            I&apos;m a goal-driven individual with a strong interest in data science, analytics, and AI. I enjoy solving real-world problems using data and thrive in roles that challenge me to think critically. While data is my core strength, I also have development skills that support building practical, end-to-end solutions. I&apos;m curious, adaptable, and always eager to learn and grow.
+            Data and Product Analyst with a proven ability to leverage data-driven insights and AI to inform product strategy and optimize business outcomes. 
+            Passionate about solving complex business problems—from identifying market opportunities to building customer-centric solutions—by combining analytical rigor with technical execution. 
+            Keen interest in development and likes building practical, end-to-end solutions.
           </p>
 
           {/* <div className="space-y-4">
