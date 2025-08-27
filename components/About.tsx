@@ -48,8 +48,7 @@ const About = () => {
           </h3>
           
           <p className="text-gray-300 text-lg md:text-2xl dark:text-gray-300">
-            Data and Product Analyst with a proven ability to leverage data-driven insights and AI to inform product strategy and optimize business outcomes. 
-            Passionate about solving complex business problems—from identifying market opportunities to building customer-centric solutions—by combining analytical rigor with technical execution. 
+            Data and Product Analyst with a proven ability to leverage data-driven insights and generative AI to perform product strategy and optimize business outcomes. 
             Keen interest in development and likes building practical, end-to-end solutions.
           </p>
 
